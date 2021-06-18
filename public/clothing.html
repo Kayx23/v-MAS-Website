@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#79003c">
+    <meta name="robots" content="noindex">
+
+    <!-- thumbnail -->
+    <link rel="icon" href="./icons/MAS-icon.png">
+
+    <!-- custome CSS -->
+    <link rel="stylesheet" href="./css/clothing.css">
+
+    <!-- Google font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- common components -->
+    <script src="./js/common.js"></script>
+    <link rel="stylesheet" href="./css/common.css">
+
+    <!-- Navbar -->
+    <script defer src="./js/navbar.js"></script>
+
+    <!-- scroll to the top rocket -->
+    <script defer src="./js/scrolltop.js"></script>
+
+    <!-- modal -->
+    <script defer src="./js/modal.js"></script>
+
+    <!-- Social Media Icon: 4.5.10 icons are more consistent than 5.1.2 -->
+    <script type="module" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule="" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.js"></script>
+
+    <title>MAS | Clothing </title>
+
+</head>
+
+<body>
+    <header class="main-head">
+        <nav-bar></nav-bar>
+    </header>
+
+    <section class="hero">
+        <header>
+            <h1>McMaster Actuarial Society</h1>
+        </header>
+    </section>
+
+    <section class="clothing">
+        <h2>2019-2020 designs</h2>
+        <!-- modal code credit: https://github.com/Riley-Brown/vanilla-js-modal -->
+        <!-- items -->
+        <div class="modal-content-wrapper">
+            <div class="image-modal-content">
+                <img src="./image/clothing/black-hoodie.jpg" alt="Black Hoodie">
+            </div>
+            <div class="image-modal-content">
+                <img src="./image/clothing/red-hoodie.jpg" alt="Maroon Hoodie">
+            </div>
+            <div class="image-modal-content">
+                <img src="./image/clothing/red-tee.jpg" alt="Maroon T-shirt">
+
+            </div>
+        </div>
+
+        <!-- modal popup -->
+        <div class="image-modal-popup">
+            <div class="wrapper">
+                <span>&times;</span>
+                <img src="" alt="Image Modal">
+                <div class="description">
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <p id="note">*2020-2021 designs are coming soon! </p>
+    <br><br><br>
+
+    <footer-bundle></footer-bundle>
+
+    <ion-icon name="rocket" button="true" id="scrolltop"></ion-icon>
+
+</body>
+
+</html>

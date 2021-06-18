@@ -1,0 +1,210 @@
+/* highlight colour */
+::selection {
+    background: rgb(255,192,72);
+  }
+
+/* Nav Bar */
+nav {
+    height: 6rem;
+    width: 95%;     /* acts as the margin */
+    margin: auto;   /* centers it */
+    background-color: white;
+    overflow: visible;  /* for mobile look */
+}
+
+nav li {
+    list-style-type: none; /* remove bullets */
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 0.7rem;
+    vertical-align: middle;
+}
+nav ul {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    float: right;  /* item orders in reverse */
+}
+nav ul li {
+    display: inline-block;
+    padding: 1.3rem;
+}
+nav ul li:hover{
+    background-color: rgb(240, 239, 239);
+    border-radius: 2rem;
+}
+nav img {
+    position: absolute;
+    left: 40px;
+    top: 14px;
+    width: 100px;
+    object-fit: contain;
+}
+nav a {
+    color: black;
+    text-decoration: none; /* gets rid of hyperlink format */
+}
+
+nav ion-icon {
+    float: right;
+    margin: 1.3rem;
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+    padding-left: 1.8rem;
+    padding-right: 1.8rem;
+    border-radius: 1.5rem;
+    display: none;
+}
+
+nav ion-icon:hover {
+    background-color: rgb(255,192,72);
+}
+
+  @media screen and (max-width: 650px) {
+    .topnav li {
+        display: none;
+    }
+    nav ion-icon {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    nav {
+        width: 100%;
+        max-width: 100%
+    }
+    nav ion-icon {
+        position: absolute; /* gets rid of hyperlink format */
+        right: 0;
+        top: 0;
+        
+    }
+    nav .topnav.responsive {
+        background-color: lightgrey;
+        display:block;
+        position: absolute;
+        top:0;
+        padding-top: 0.5rem;
+    }
+    nav .topnav.responsive li {
+        float: none;
+        display:block;
+        text-align: center;
+        width: 100vw;
+        padding-right: 0;  /* prevent menu overflow */
+        padding-left: 0;   /* prevent menu overflow */
+    }
+    nav .topnav.responsive li:hover{
+        background-color: rgb(255,192,72);
+    }
+    nav .topnav.responsive li a{
+        display: block;
+        padding: 0.05rem;
+    }
+  }
+
+  .main-head {
+    background:white;
+    color: black;
+  }
+
+  /* footer */
+
+.footer-yellow {
+    background: rgb(255,192,72);
+    height: 1rem;
+}
+
+.footer-grey {
+    background: rgb(92, 106, 114);   /* McMaster Maroon */
+    height: 19rem;
+    color: white;                  /* text color */
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-grey img {
+    width: 40rem;
+    padding: 5rem;
+    object-fit: contain;
+}
+
+.footer-grey #address, #contact-us {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3.5rem;
+}
+
+.social-media-icons {
+    display: flex;
+}
+
+@media screen and (max-width: 900px) {
+    .footer-grey img{
+        display: none;
+    }
+    .footer-grey #address {
+        margin-left: 2rem;
+    }
+}
+
+ion-icon {
+    font-size: 2.5rem;
+    color: rgb(65, 65, 66);
+    margin-top: 0.5rem;
+    margin-right: 0.5rem;
+  }
+
+/* footer maroon */
+.footer-maroon {
+    background: rgb(121, 0, 60);
+    height: 6rem;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+.footer-maroon p {
+    padding-left: 7rem;
+}
+
+@media screen and (max-width: 600px) {
+    .footer-maroon p {
+        padding-left: 2rem;
+    }
+}
+
+/* scroll to the top icon */
+
+#scrolltop {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: rgb(255,192,72,0.5);
+    padding:0.7rem;
+    display: none;
+    z-index: 100;
+}
+
+#scrolltop:hover{
+    background-color: rgb(255,192,72);
+
+}
+
+/* top progress bar */
+#progressbar {
+	position: fixed;
+	height: 6px;
+	z-index: 10;
+	
+	top: 0;
+	left: 0;
+	right: calc( 100% );
+	
+	background-color: rgb(255,192,72);
+	
+    transition: right 0.3s linear 0s;
+}

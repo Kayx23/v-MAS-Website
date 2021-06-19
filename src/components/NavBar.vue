@@ -1,21 +1,42 @@
 <template>
   <header class="main-head">
-    <nav id="top">
-      <li>
-        <!-- puts img inside of <li> for alignment! -->
-        <img src="icons/mactuaries.png" alt="MAS-logo" />
-      </li>
-      <ul id="main-list">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="index.html#resources">Resources</a></li>
-        <li><a href="index.html#events">Events</a></li>
-        <li><a href="meet-the-team.html">Meet the Team</a></li>
-        <li><a href="index.html#address">Contact Us</a></li>
-        <!--         <router-link to="/">Home</router-link>
-        <router-link to="/meet-the-team">Meet the Team</router-link> -->
-      </ul>
-      <ion-icon name="menu" id="menu" onclick="ExpandMenu()"></ion-icon>
-    </nav>
+    <scrollactive>
+      <nav id="top">
+        <li>
+          <!-- puts img inside of <li> for alignment! -->
+          <img src="icons/mactuaries.png" alt="MAS-logo" />
+        </li>
+        <ul id="main-list">
+          <li><router-link to="/">Home</router-link></li>
+
+          <li>
+            <a
+              v-if="$route.name === 'home'"
+              href="#resources"
+              class="scrollactive-item"
+              >Resources</a
+            >
+            <router-link v-else to="/#resources">Resources</router-link>
+          </li>
+          <li>
+            <a
+              v-if="$route.name === 'home'"
+              href="#events"
+              class="scrollactive-item"
+              >Events</a
+            >
+            <router-link v-else to="/#events">Events</router-link>
+          </li>
+          <li>
+            <router-link to="/meet-the-team">Meet the Team</router-link>
+          </li>
+          <li>
+            <a href="#address" class="scrollactive-item">Contact Us</a>
+          </li>
+        </ul>
+        <ion-icon name="menu" id="menu" onclick="ExpandMenu()"></ion-icon>
+      </nav>
+    </scrollactive>
   </header>
 </template>
 

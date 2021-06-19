@@ -7,9 +7,7 @@ import mtt from "./views/mtt";
 
 Vue.use(Router)
 
-
-
-export default new Router = new Router({
+export default new Router({
     routes: [
         {
             path: '/',
@@ -21,5 +19,17 @@ export default new Router = new Router({
             component: mtt,
             name: 'mtt'
         },
-    ]
+    ],
+    /* this is to makes */
+    scrollBehavior: function (to) {
+        if (to.hash) {
+            return {
+                selector: to.hash
+            }
+        }
+    },
+    /* to get rid of the hash in reload to ensure anchors work correctly; 
+    see HTML5 history mode */
+    mode: 'history'
+
 })

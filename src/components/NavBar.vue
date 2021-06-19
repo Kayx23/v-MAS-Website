@@ -10,7 +10,9 @@
         <li><a href="index.html#resources">Resources</a></li>
         <li><a href="index.html#events">Events</a></li>
         <li><a href="meet-the-team.html">Meet the Team</a></li>
-        <li><a href="FAQ.html">FAQ</a></li>
+        <li><a href="index.html#address">Contact Us</a></li>
+        <!--         <router-link to="/">Home</router-link>
+        <router-link to="/meet-the-team">Meet the Team</router-link> -->
       </ul>
       <ion-icon name="menu" id="menu" onclick="ExpandMenu()"></ion-icon>
     </nav>

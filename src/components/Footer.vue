@@ -33,7 +33,10 @@
     </section>
 
     <section class="footer-maroon">
-      <p>© 2021 McMaster Actuarial Society. All rights reserved.</p>
+      <p>
+        © {{ new Date().getFullYear() }} McMaster Actuarial Society. All rights
+        reserved.
+      </p>
     </section>
   </footer>
 </template>

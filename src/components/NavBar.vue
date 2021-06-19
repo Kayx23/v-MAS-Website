@@ -149,4 +149,12 @@ nav ion-icon:hover {
   background: white;
   color: black;
 }
+
+/* sandwich */
+ion-icon {
+  font-size: 2.5rem;
+  color: rgb(65, 65, 66);
+  margin-top: 0.5rem;
+  margin-right: 0.5rem;
+}
 </style>

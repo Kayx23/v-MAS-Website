@@ -20,14 +20,6 @@ export default new Router({
             name: 'mtt'
         },
     ],
-    /* this is to makes */
-    scrollBehavior: function (to) {
-        if (to.hash) {
-            return {
-                selector: to.hash
-            }
-        }
-    },
     /* to get rid of the hash in reload to ensure anchors work correctly; 
     see HTML5 history mode */
     mode: 'history'

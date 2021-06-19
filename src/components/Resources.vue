@@ -22,7 +22,9 @@
             well as the relevant math and stats courses! See you at 12:30pm -
             1:20pm EST every Thursday on Zoom.
           </p>
-          <a href="#">Zoom Link</a>
+          <a onclick="alert('Stay tuned - Zoom link to be updated!')"
+            >Zoom Link</a
+          >
         </div>
         <div class="card">
           <div class="card-icon"></div>
@@ -32,7 +34,8 @@
             print to channel some actuarial spirits? Stay tuned, 2020-2021
             designs are coming soon!
           </p>
-          <a href="./clothing.html">Read More</a>
+          <!-- <a href="./clothing.html">Read More</a> -->
+          <router-link to="/clothing">Read More</router-link>
         </div>
         <div class="card">
           <div class="card-icon"></div>

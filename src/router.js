@@ -28,6 +28,15 @@ export default new Router({
     ],
     /* to get rid of the hash in reload to ensure anchors work correctly; 
     see HTML5 history mode */
-    mode: 'history'
+    mode: 'history',
+
+    /* closed in #5 */
+    scrollBehavior(to) {
+        if (to.hash) {
+            return {
+                selector: to.hash
+            }
+        }
+    }
 
 })

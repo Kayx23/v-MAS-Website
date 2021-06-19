@@ -4,7 +4,7 @@
       <nav id="top">
         <li>
           <!-- puts img inside of <li> for alignment! -->
-          <img src="icons/mactuaries.png" alt="MAS-logo" />
+          <img src="../assets/icons/mactuaries.png" alt="MAS-logo" />
         </li>
         <ul id="main-list">
           <li><router-link to="/">Home</router-link></li>
@@ -16,7 +16,9 @@
               class="scrollactive-item"
               >Resources</a
             >
-            <router-link v-else to="/#resources">Resources</router-link>
+            <router-link v-else :to="{ name: 'home', hash: '#resources' }"
+              >Resources</router-link
+            >
           </li>
           <li>
             <a

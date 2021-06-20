@@ -26,6 +26,12 @@ npm run serve -- --port 3030
 npm run build
 ```
 
+### serving locally
+```
+# -s flag means serving in Single-Page Application mode
+serve -s dist
+```
+
 ### webpack
 [how to reduce bundle size](https://medium.com/js-dojo/how-to-reduce-your-vue-js-bundle-size-with-webpack-3145bf5019b7)
 ```

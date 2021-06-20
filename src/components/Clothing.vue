@@ -44,7 +44,7 @@
 export default {
   name: "Clothing",
   created() {
-    this.$loadScript("../js/modal.js");
+    import("../js/modal.js");
   },
 };
 </script>

@@ -1,6 +1,5 @@
 <template>
   <div id="app">
-    <ProgressBar />
     <NavBar />
     <Rocket />
     <router-view />
@@ -10,16 +9,15 @@
 <script>
 import NavBar from "./components/NavBar";
 import Rocket from "./components/Rocket";
-import ProgressBar from "./components/ProgressBar";
 
 export default {
   name: "App",
-  components: { ProgressBar, NavBar, Rocket },
+  components: { NavBar, Rocket },
   beforeCreate() {
     // jQuery
     this.$loadScript(
       "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"
-    ); //.then(console.log("loaded!"));
+    );
   },
 };
 </script> 
@@ -66,5 +64,10 @@ h3 {
 h4,
 h5 {
   font-size: 1.6rem;
+}
+
+/*  progress bar */
+#progress-el {
+  background-color: rgb(255, 192, 72) !important;
 }
 </style>

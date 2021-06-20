@@ -19,7 +19,6 @@ const modalPopup = document.querySelector('.image-modal-popup');
 
 // loops over each modal content img and adds click event functionality
 lightboxImages.forEach(img => {
-    const data = img.dataset;
     img.addEventListener('click', e => {
         body.style.overflow = 'hidden';
         e.stopPropagation();

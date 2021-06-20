@@ -1,38 +1,33 @@
 <template>
   <section id="events">
     <h2>Upcoming Events</h2>
+
     <div class="calendar-social-media">
-      <div id="calendar"></div>
-      <div id="social-media">
-        <div
-          class="fb-page"
-          data-href="https://www.facebook.com/McMasterActuarialSociety/"
-          data-tabs="timeline"
-          data-width="320"
-          data-height="650"
-          data-small-header="false"
-          data-adapt-container-width="false"
-          data-hide-cover="false"
-          data-show-facepile="false"
-        >
-          <blockquote
-            cite="https://www.facebook.com/McMasterActuarialSociety/"
-            class="fb-xfbml-parse-ignore"
-          ></blockquote>
-        </div>
+      <!-- need two divs wrapping the elements in mobile view -->
+      <!-- cannot have the wrapper div for calender in wide screen -->
+      <dir v-if="$windowWidth > 950" id="calendar"><FullCalendar /></dir>
+      <div v-else>
+        <dir id="calendar"><FullCalendar /></dir>
       </div>
+      <dir><FaceBook /></dir>
     </div>
   </section>
 </template>
 
 <script>
+import FullCalendar from "./FullCalendar";
+import FaceBook from "./FaceBook";
+
 export default {
   name: "Events",
+  components: { FullCalendar, FaceBook },
 };
 </script>
 
 <style scoped>
-/* events */
+h2 {
+  margin-bottom: 4rem;
+}
 
 #events {
   text-align: center;
@@ -61,14 +56,15 @@ export default {
   justify-content: center;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 950px) {
   .calendar-social-media {
     display: flex;
     flex-direction: column;
   }
+
   #calendar {
     max-width: 95%;
-    margin: 1.5rem auto;
+    margin: 1rem auto;
     font-size: 1.5rem;
     padding: 2%;
     font-size: small;
@@ -76,9 +72,5 @@ export default {
   #events {
     padding: 2.5rem 1rem;
   }
-}
-
-.fc-day-grid-event > .fc-content {
-  white-space: normal;
 }
 </style>

@@ -1,5 +1,11 @@
 # v-mas-website
 
+This is a Vue 2 project `"vue": "^2.6.11"`
+
+
+### Temp Notes
+anything referenced in public will simply be copied and not run through webpack
+
 ## Project setup
 ```
 npm install

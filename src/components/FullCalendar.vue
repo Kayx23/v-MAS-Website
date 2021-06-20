@@ -27,7 +27,6 @@ export default {
       calendarOptions: {
         plugins: [dayGridPlugin, interactionPlugin, googleCalendarPlugin],
         initialView: "dayGridMonth",
-        datesRender: "handleDatesRender",
         dayMaxEvents: true, // dynamically changes to +n events
         contentHeight: 590, // adjust to align with fb page
         eventDisplay: "block", // don't want dots

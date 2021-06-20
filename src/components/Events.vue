@@ -41,9 +41,9 @@ h2 {
 #calendar {
   flex: 4;
   max-width: 70%;
-  margin: 1.5rem auto;
+  margin: 0rem auto;
   font-size: 1.5rem;
-  padding: 2%;
+  padding: 10px 2%; /* 10px to align with fb page */
 }
 
 .calendar-social-media #social-media {

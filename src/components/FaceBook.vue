@@ -18,32 +18,3 @@ export default {
   name: "FaceBook",
 };
 </script>
-
-<style scoped>
-.calendar-social-media #social-media {
-  /* the width and height is set in html */
-  overflow: visible; /* prevent the view to get cut off since it doesn't resize */
-  flex: 1;
-  padding: 1rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-@media screen and (max-width: 900px) {
-  .calendar-social-media {
-    display: flex;
-    flex-direction: column;
-  }
-  #calendar {
-    max-width: 95%;
-    margin: 1.5rem auto;
-    font-size: 1.5rem;
-    padding: 2%;
-    font-size: small;
-  }
-  #events {
-    padding: 2.5rem 1rem;
-  }
-}
-</style>

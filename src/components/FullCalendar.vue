@@ -29,7 +29,7 @@ export default {
         initialView: "dayGridMonth",
         datesRender: "handleDatesRender",
         dayMaxEvents: true, // dynamically changes to +n events
-        contentHeight: 600, // cell height
+        contentHeight: 590, // adjust to align with fb page
         eventDisplay: "block", // don't want dots
         headerToolbar: {
           left: "today",

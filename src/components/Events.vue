@@ -15,8 +15,8 @@
 </template>
 
 <script>
-import FullCalendar from "@/components/FullCalendar";
-import FaceBook from "@/components/FaceBook";
+import FullCalendar from "./FullCalendar";
+import FaceBook from "./FaceBook";
 
 export default {
   name: "Events",

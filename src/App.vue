@@ -8,9 +8,9 @@
 </template>
 
 <script>
-import NavBar from "@/components/NavBar";
-import Rocket from "@/components/Rocket";
-import ProgressBar from "@/components/ProgressBar";
+import NavBar from "./components/NavBar";
+import Rocket from "./components/Rocket";
+import ProgressBar from "./components/ProgressBar";
 
 export default {
   name: "App",

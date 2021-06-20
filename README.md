@@ -1,9 +1,12 @@
 # v-mas-website
 
-This is a Vue 2 project `"vue": "^2.6.11"`
+[![Netlify Status](https://api.netlify.com/api/v1/badges/c97052aa-caa3-473e-9448-3b1da6108ccd/deploy-status)](https://app.netlify.com/sites/unruffled-albattani-ddca59/deploys)
 
 
-### Temp Notes
+This is a Vue 2 project. The plan is to integrate with sanity, a headless CMS. 
+
+
+## Temp Notes
 anything referenced in public will simply be copied and not run through webpack
 
 ## Project setup
@@ -19,6 +22,12 @@ npm run serve -- --port 3030
 ### Compiles and minifies for production
 ```
 npm run build
+```
+
+### webpack
+[how to reduce bundle size](https://medium.com/js-dojo/how-to-reduce-your-vue-js-bundle-size-with-webpack-3145bf5019b7)
+```
+npm install --save-dev webpack-bundle-analyzer 
 ```
 
 ### Lints and fixes files

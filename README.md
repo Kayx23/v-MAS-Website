@@ -1,10 +1,10 @@
 # v-mas-website
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/c97052aa-caa3-473e-9448-3b1da6108ccd/deploy-status)](https://app.netlify.com/sites/unruffled-albattani-ddca59/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/3e52ce33-c46a-4d12-91d1-b5d1b3b53cf4/deploy-status)](https://app.netlify.com/sites/prodmactuary/deploys)
+ ==> prod: https://mactuary.ca
 
-dev: https://dev.mactuary.ca
-
-prod: https://mactuary.ca
+[![Netlify Status](https://api.netlify.com/api/v1/badges/650efd8a-9fab-4a0a-bb4c-f971def5b10b/deploy-status)](https://app.netlify.com/sites/devmactuary/deploys)
+ ==> dev: https://dev.mactuary.ca
 
 ## Temp Notes
 > anything in public will simply be copied and not run through webpack

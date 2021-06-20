@@ -2,9 +2,9 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 
-import Home from "./views/Home";
-import mtt from "./views/mtt";
-import Clothing_view from "./views/Clothing";
+import Home from "@/views/Home";
+import mtt from "@/views/mtt";
+import Clothing_view from "@/views/Clothing";
 
 Vue.use(Router)
 

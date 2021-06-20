@@ -2,12 +2,10 @@
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/c97052aa-caa3-473e-9448-3b1da6108ccd/deploy-status)](https://app.netlify.com/sites/unruffled-albattani-ddca59/deploys)
 
-
-This is a Vue 2 project. The plan is to integrate with sanity, a headless CMS. 
-
-
 ## Temp Notes
-anything referenced in public will simply be copied and not run through webpack
+> anything in public will simply be copied and not run through webpack
+
+> In Vue Webpack template, Webpack is configured to replace @/ with src path
 
 ## Project setup
 ```

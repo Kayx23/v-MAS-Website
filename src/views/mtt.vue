@@ -7,9 +7,9 @@
 </template>
 
 <script>
-import HeroMTT from "../components/HeroMTT";
-import Team from "../components/Team";
-import Footer from "../components/Footer";
+import HeroMTT from "@/components/HeroMTT";
+import Team from "@/components/Team";
+import Footer from "@/components/Footer";
 
 export default {
   name: "mtt",

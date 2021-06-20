@@ -1,6 +1,6 @@
 import Vue from 'vue'
-import App from './App.vue'
-import router from './router'
+import App from '@/App.vue'
+import router from '@/router'
 import VueScrollactive from 'vue-scrollactive'
 import LoadScript from 'vue-plugin-load-script';
 import { VueWindowSizePlugin } from "vue-window-size/option-api";

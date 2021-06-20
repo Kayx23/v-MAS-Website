@@ -5,6 +5,9 @@
 <script>
 export default {
   name: "ProgressBar",
+  created() {
+    this.$loadScript("../js/progressBar.js");
+  },
 };
 </script>
 

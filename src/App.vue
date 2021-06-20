@@ -15,11 +15,20 @@ import ProgressBar from "./components/ProgressBar";
 export default {
   name: "App",
   components: { ProgressBar, NavBar, Rocket },
+  beforeCreate() {
+    // jQuery
+    this.$loadScript(
+      "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+    ); //.then(console.log("loaded!"));
+  },
 };
 </script> 
 
 
 <style>
+/* google font */
+@import "https://fonts.googleapis.com/css2?family=Inter&display=swap";
+
 ::selection {
   background: rgb(255, 192, 72);
 }

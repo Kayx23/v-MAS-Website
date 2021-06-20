@@ -43,11 +43,14 @@
 <script>
 export default {
   name: "Clothing",
+  created() {
+    this.$loadScript("../js/modal.js");
+  },
 };
 </script>
 
 <style scoped>
-/* modal code credit: https://github.com/Riley-Brown/vanilla-js-modal */
+/* modal credit: https://github.com/Riley-Brown/vanilla-js-modal */
 
 /* modal content styles */
 .modal-content-wrapper {

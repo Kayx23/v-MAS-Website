@@ -45,6 +45,9 @@
 <script>
 export default {
   name: "NavBar",
+  created() {
+    this.$loadScript("../js/navbar.js");
+  },
 };
 </script>
 

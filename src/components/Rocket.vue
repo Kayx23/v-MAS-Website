@@ -5,6 +5,9 @@
 <script>
 export default {
   name: "Rocket",
+  created() {
+    this.$loadScript("../js/rocket.js");
+  },
 };
 </script>
 

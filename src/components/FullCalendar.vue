@@ -3,9 +3,12 @@
 </template>
 
 <style>
-/* .fc-day-grid-event > .fc-content {
+/* wrapping time and title */
+.fc-event-time,
+.fc-event-title {
+  padding: 0 1px;
   white-space: normal;
-} */
+}
 </style>
 
 <script>
@@ -26,6 +29,7 @@ export default {
         datesRender: "handleDatesRender",
         dayMaxEvents: true, // dynamically changes to +n events
         contentHeight: 600, // cell height
+        eventDisplay: "block", // don't want dots
         headerToolbar: {
           left: "today",
           center: "title",

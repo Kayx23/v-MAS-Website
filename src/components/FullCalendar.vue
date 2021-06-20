@@ -16,6 +16,7 @@ import "@fullcalendar/core/vdom"; // solves problem with Vite
 import FullCalendar from "@fullcalendar/vue";
 import dayGridPlugin from "@fullcalendar/daygrid";
 import interactionPlugin from "@fullcalendar/interaction";
+import googleCalendarPlugin from "@fullcalendar/google-calendar";
 
 export default {
   components: {
@@ -24,7 +25,7 @@ export default {
   data() {
     return {
       calendarOptions: {
-        plugins: [dayGridPlugin, interactionPlugin],
+        plugins: [dayGridPlugin, interactionPlugin, googleCalendarPlugin],
         initialView: "dayGridMonth",
         datesRender: "handleDatesRender",
         dayMaxEvents: true, // dynamically changes to +n events
@@ -36,7 +37,12 @@ export default {
           right: "prev,next",
         },
         eventColor: "rgb(121, 0, 60)" /* change colour of all events */,
-        events: [
+        googleCalendarApiKey: "AIzaSyDY_VDlCuo1b-w34b7yzzNOwBKzLHHT10M",
+        events: {
+          googleCalendarId:
+            "c_ffut3n6jnpuihuor46d7jp7tng@group.calendar.google.com",
+        },
+        /* events: [
           {
             title: "IABA & Willis Towers Watson ",
             start: "2020-09-02T18:00:00",
@@ -120,7 +126,7 @@ export default {
             start: "2020-11-17",
             url: "https://www.eventbrite.com/e/emerging-risks-in-business-perspectives-from-the-insurance-industry-tickets-127477052295",
           },
-        ],
+        ], */
       },
     };
   },

@@ -23,7 +23,15 @@
 
 <script>
 import sanity from "../client.js";
-const query = `*[_type=="team"]{_id, name, role, bio, headshot, "headshot": headshot.asset->url}`;
+const query = `*[_type=="team"]{
+  _id, 
+  name, 
+  role, 
+  bio, 
+  headshot, 
+  "headshot": headshot.asset->url,
+  order
+  } | order(order asc)`;
 
 export default {
   name: "Team",

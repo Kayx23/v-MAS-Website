@@ -5,7 +5,7 @@ For school year 2021-2022.
 
 ### How to Update Calendar Events
 * Log into Google Calendar with MAS Google account
-* A calendar category called "MAS Website" has been created (<span style="background-color: #FFFF00">Do not modify any settings for this calendar category</span>). Any edits to the calendar will be **immediately** deployed to the production website -- so be careful what you change!
+* A calendar category called "MAS Website" has been created (_Do not modify any settings for this calendar category_). Any edits to the calendar will be **immediately** deployed to the production website -- so be careful what you change!
 
     <img src="https://user-images.githubusercontent.com/39619599/122835758-f884bd00-d2be-11eb-8402-f0fe1c3aa49e.png" width=60%>
 

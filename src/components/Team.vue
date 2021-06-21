@@ -1,239 +1,19 @@
 <template>
   <section class="meet-the-team">
     <h2>Meet Our Team</h2>
-    <div class="team-container">
+    <div class="team-container" v-for="profile in profiles" :key="profile._id">
+      <!-- Vue's virtual DOM needs to differentiate between the different VNodes; this is done by setting :key to a unique value for each node. Here we use _id.-->
       <div class="team-member">
         <div class="pic-and-role">
-          <img
-            src="https://user-images.githubusercontent.com/39619599/94396090-2887a100-012f-11eb-9814-5d80063f7ae2.jpg"
-            alt="profile-picture"
-          />
-          <p><strong>Josh Levine</strong></p>
-          <p>Co-president</p>
-        </div>
-        <div class="bio">
+          <img v-bind:src="profile.headshot" alt="profile-picture" />
           <p>
-            My name is Josh Levine and I’m looking forward to being one of the
-            McMaster Actuarial Society’s Co-Presidents for the 2020-2021 year.
-            I’m currently in my 5th and final year of the Actuarial & Financial
-            Math program and have been on the executive team since my 3rd year
-            at Mac. I have also spent 3 co-op terms working at Manulife and
-            Swiss RE and would be happy to answer any questions you might have
-            about work as an actuarial co-op, balancing extra-curricular
-            commitments or studying for actuarial exams. Outside of school, I
-            enjoy watching Hockey, UFC and going to the gym.
+            <strong>{{ profile.name }}</strong>
           </p>
-        </div>
-      </div>
-
-      <div class="team-member">
-        <div class="pic-and-role">
-          <img
-            src="https://user-images.githubusercontent.com/39619599/94396385-ca0ef280-012f-11eb-9b16-6487df33be1d.png"
-            alt="profile-picture"
-          />
-          <p><strong>Victor Broda</strong></p>
-          <p>Co-president</p>
+          <p>{{ profile.role }}</p>
         </div>
         <div class="bio">
           <p>
-            My name is Victor Broda and I am one of McMaster Actuarial Society’s
-            Co-Presidents for the 2020-2021 year. I’m currently in my 4th year
-            of the Actuarial & Financial Math program and have been on the
-            executive team since my 2nd year at Mac. I have also spent 2 co-op
-            terms working at TD Insurance working with their life and health
-            insurance business. This role gave me a great understanding of what
-            it’s like to work as a life actuary. I have also passed the 3
-            preliminary SOA exams and I would be happy to share any knowledge I
-            have on these topics. When taking a break from school, I really
-            enjoy travelling, playing and watching hockey, basketball and
-            soccer.
-          </p>
-        </div>
-      </div>
-
-      <div class="team-member">
-        <div class="pic-and-role">
-          <img
-            src="https://user-images.githubusercontent.com/39619599/95517712-87e77b80-098f-11eb-9292-5c13e319f406.jpg"
-            alt="profile-picture"
-          />
-          <p><strong>Abarna Jeevahan</strong></p>
-          <p>VP Academic</p>
-        </div>
-        <div class="bio">
-          <p>
-            Hi everyone, my name is Abarna Jeevahan (but I also go by Abi) and I
-            am the VP Academic for the 2020-2021 year. I'm in my 4th year in the
-            Actuarial and Financial Math and have been on the executive team
-            since my 2nd year. I've finished 2 co-ops so far - one at Sun Life
-            and one at Manulife. I've also passed the 3 preliminary actuarial
-            exams (Exam P, FM, and IFM). If you have any questions about my
-            experiences, please feel free to reach out! Outside of school, I
-            like to hike, do yoga, and sew. Here's to a great virtual year!
-          </p>
-        </div>
-      </div>
-
-      <div class="team-member">
-        <div class="pic-and-role">
-          <img
-            src="https://user-images.githubusercontent.com/39619599/94971816-eca95e80-04d5-11eb-9ea8-12e82853ddbd.jpg"
-            alt="profile-picture"
-          />
-          <p><strong>Keyang Mei</strong></p>
-          <p>VP External</p>
-        </div>
-        <div class="bio">
-          <p>
-            My name is Keyang and I'm the VP External for McMaster Actuarial
-            Society this year. I'm currently in my 4th year of Actuarial &
-            Financial Math Co-op and also the CAS student ambassador for
-            McMaster University. I am interested in Insurtech, data science,
-            graphic design, and doing taxes for my friends. I'm looking forward
-            to introducing the actuarial career path and the insurance industry
-            to more students on campus!
-          </p>
-        </div>
-      </div>
-
-      <div class="team-member">
-        <div class="pic-and-role">
-          <img
-            src="https://user-images.githubusercontent.com/39619599/98154704-2be71880-1ea3-11eb-8f97-cfc76564d436.png"
-            alt="profile-picture"
-          />
-          <p><strong>Kyle Leger</strong></p>
-          <p>VP Finance</p>
-        </div>
-        <div class="bio">
-          <p>
-            My name is Kyle Leger and I am the VP of Finance at the McMaster
-            Actuarial Society for the 2020-2021 year. I am a third year Honours
-            Commerce student and minoring in mathematics. This is my second year
-            on the MAS Executive team, and first year in the role of VP of
-            Finance. On my off time I enjoy listening to music, going to the
-            gym, as well as watching football and basketball.
-          </p>
-        </div>
-      </div>
-
-      <div class="team-member">
-        <div class="pic-and-role">
-          <img
-            src="https://user-images.githubusercontent.com/39619599/94396593-40135980-0130-11eb-832c-75f07c25126f.jpg"
-            alt="profile-picture"
-          />
-          <p><strong>Mei Lin Yu</strong></p>
-          <p>VP Admin & Operations</p>
-        </div>
-        <div class="bio">
-          <p>
-            Hi everyone, my names Mei Lin Yu and I'm VP Admin and Operations at
-            McMaster Actuarial Society for this year. I'm in 4th year AFM co-op
-            and currently on my school term. I've finished a co-op at RBC as an
-            actuarial analyst, so I'd be glad to help answer any questions about
-            interviews and how to network! I'm apart of the McMaster Barbell
-            club and I have been powerlifting for a couple years. I also love
-            cooking and baking in my free time. Looking forward to virtually
-            meeting everyone at our events!
-          </p>
-        </div>
-      </div>
-
-      <div class="team-member">
-        <div class="pic-and-role">
-          <img
-            src="https://user-images.githubusercontent.com/39619599/94971938-1b273980-04d6-11eb-9982-fe71bfcd28c7.jpg"
-            alt="profile-picture"
-          />
-          <p><strong>Rashmi Panse</strong></p>
-          <p>VP Marketing</p>
-        </div>
-        <div class="bio">
-          <p>
-            Hi everyone! My name is Rashmi Panse and I am the VP of Marketing
-            for the 2020-2021 MAS team. I am in my third year of Actuarial and
-            Financial Math and have been on the MAS team since my second year. A
-            little bit about my professional background, I recently passed the P
-            exam this summer and I have worked two internships so far at Intact
-            Financial Corp. and Aon Reinsurance. I am always open to any
-            questions about my experiences so feel free to message me on
-            Facebook or Linkedin anytime! Aside from school, I love working out,
-            reading and online shopping in my free time. Looking forward to a
-            great year with MAS!
-          </p>
-        </div>
-      </div>
-
-      <div class="team-member">
-        <div class="pic-and-role">
-          <img
-            src="https://user-images.githubusercontent.com/39619599/98153762-af076f00-1ea1-11eb-8ef9-12651ae9be27.png"
-            alt="profile-picture"
-          />
-          <p><strong>Soban Ali</strong></p>
-          <p>VP Finance</p>
-        </div>
-        <div class="bio">
-          <p>
-            Hi everyone! I am Soban Ali and I’m VP finance for the 2020-2021
-            year. Currently I am a 3rd year student and I have been part of the
-            team since my 2nd year. This past year I passed exam FM and worked
-            with McMaster to create a new first year course. Over the years, I
-            have improved my tennis skills (feel free to challenge me to a
-            match). Outside of school I really enjoy going to the gym, playing
-            and watching basketball and soccer. I look forward to meeting all
-            the new students in the program! Feel free to contact me for any
-            mentorship or questions, I will gladly love to help new students in
-            the Actuarial field.
-          </p>
-        </div>
-      </div>
-
-      <div class="team-member">
-        <div class="pic-and-role">
-          <img
-            src="https://user-images.githubusercontent.com/39619599/94972043-56c20380-04d6-11eb-9e4e-cd0cf8ac0d28.png"
-            alt="profile-picture"
-          />
-          <p><strong>Edwin Lau</strong></p>
-          <p>Assistant VP Academic</p>
-        </div>
-        <div class="bio">
-          <p>
-            My name is Edwin Lau and I am the Assistant VP of Academic for the
-            McMaster Actuarial Society this year. I am in my fourth year of the
-            Mathematics and Statistics program and have been with the executive
-            team for two years. I have completed my latest internship at TD
-            Asset Management. I have completed 2 preliminary actuarial exams and
-            am glad to help new students get started with their actuarial
-            careers. In my free time I like to look at financial news.
-          </p>
-        </div>
-      </div>
-
-      <div class="team-member">
-        <div class="pic-and-role">
-          <img
-            src="https://user-images.githubusercontent.com/39619599/94972093-7bb67680-04d6-11eb-9209-64c5d8f830d7.jpg"
-            alt="profile-picture"
-          />
-          <p><strong>Traky Deng</strong></p>
-          <p>Website Developer</p>
-        </div>
-        <div class="bio">
-          <p>
-            My name is Traky and I am the developer of this website. I am a 5th
-            year Actuarial & Financial Math student and this is my 3rd (and
-            last) year with the society. In previous years, I was first an
-            executive running weekly actuarial exam study sessions and
-            subsequently the VP General. I have completed three actuarial exams
-            and my co-op experiences include two terms with a life & health
-            corporate actuarial team and one term with a general insurance
-            actuarial team focusing on modelling & analytics. Outside of
-            school,I enjoy working with technologies, working out, and learning
-            languages.
+            {{ profile.bio }}
           </p>
         </div>
       </div>
@@ -242,8 +22,27 @@
 </template>
 
 <script>
+import sanity from "../client.js";
+const query = `*[_type=="team"]{_id, name, role, bio, headshot, "headshot": headshot.asset->url}`;
+
 export default {
   name: "Team",
+  data() {
+    return {
+      profiles: [],
+    };
+  },
+  created() {
+    this.fetchData();
+  },
+  methods: {
+    fetchData() {
+      sanity.fetch(query).then((profiles) => {
+        this.profiles = profiles;
+        console.log(profiles);
+      });
+    },
+  },
 };
 </script>
 

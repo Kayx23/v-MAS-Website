@@ -36,7 +36,7 @@
             <a href="#address" class="scrollactive-item">Contact Us</a>
           </li>
         </ul>
-        <ion-icon name="menu" id="menu" onclick="ExpandMenu()"></ion-icon>
+        <ion-icon name="menu" id="menu" @click="ExpandMenu"></ion-icon>
       </nav>
     </scrollactive>
   </header>
@@ -45,8 +45,19 @@
 <script>
 export default {
   name: "NavBar",
-  created() {
-    import("../js/navbar.js");
+  methods: {
+    ExpandMenu: function () {
+      var x = document.getElementById("main-list");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    },
+  },
+  mounted() {
+    // calling ExpandMenu() on mounted
+    this.ExpandMenu();
   },
 };
 </script>

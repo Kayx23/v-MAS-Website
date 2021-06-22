@@ -13,12 +13,6 @@ import Rocket from "./components/Rocket";
 export default {
   name: "App",
   components: { NavBar, Rocket },
-  beforeCreate() {
-    // jQuery
-    this.$loadScript(
-      "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"
-    );
-  },
 };
 </script> 
 

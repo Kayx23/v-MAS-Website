@@ -36,7 +36,7 @@ export default {
           right: "prev,next",
         },
         eventColor: "rgb(121, 0, 60)" /* change colour of all events */,
-        googleCalendarApiKey: `${GOOGLE_API}`,
+        googleCalendarApiKey: `${process.env.GOOGLE_API}`,
         events: {
           googleCalendarId:
             "c_ffut3n6jnpuihuor46d7jp7tng@group.calendar.google.com",

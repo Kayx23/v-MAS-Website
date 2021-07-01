@@ -35,8 +35,8 @@ export default {
           center: "title",
           right: "prev,next",
         },
-        eventColor: "rgb(121, 0, 60)" /* change colour of all events */,
-        googleCalendarApiKey: `${process.env.GOOGLE_API}`,
+        eventColor: "rgb(121, 0, 60)",
+        googleCalendarApiKey: "AIzaSyDY_VDlCuo1b-w34b7yzzNOwBKzLHHT10M",
         events: {
           googleCalendarId:
             "c_ffut3n6jnpuihuor46d7jp7tng@group.calendar.google.com",
@@ -45,6 +45,4 @@ export default {
     };
   },
 };
-
-console.log(`${process.env.GOOGLE_API}`);
 </script>

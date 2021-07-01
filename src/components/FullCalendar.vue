@@ -45,4 +45,6 @@ export default {
     };
   },
 };
+
+console.log(`${process.env.GOOGLE_API}`);
 </script>

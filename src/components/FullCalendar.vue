@@ -36,7 +36,7 @@ export default {
           right: "prev,next",
         },
         eventColor: "rgb(121, 0, 60)",
-        googleCalendarApiKey: `${VUE_APP_GOOGLE_API}`,
+        googleCalendarApiKey: "AIzaSyDY_VDlCuo1b-w34b7yzzNOwBKzLHHT10M",
         events: {
           googleCalendarId:
             "c_ffut3n6jnpuihuor46d7jp7tng@group.calendar.google.com",

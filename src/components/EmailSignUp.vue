@@ -46,7 +46,7 @@ export default {
         if (response.target.status === 200) {
           form.reset();
           submitResponse.innerHTML =
-            "Submitted! Please confirm your subscription in your inbox.";
+            'Submitted! Please complete your email confirmtion within <strong><span style="color: #993300;">1 hour</span></strong>.';
         } else {
           submitResponse.innerHTML = "Unknown Error! Please report to us.";
         }
@@ -207,7 +207,6 @@ export default {
 #mc_embed_signup div.response {
   margin: 1em 0;
   padding: 1em 0.5em 0.5em 0;
-  font-weight: bold;
   float: left;
   top: -1.5em;
   z-index: 1;

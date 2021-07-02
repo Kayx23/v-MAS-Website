@@ -8,8 +8,7 @@ import VueScrollProgress from 'vue-scroll-progress'
 
 Vue.config.productionTip = false
 Vue.config.ignoredElements = [/^ion-/]
-// the enternal element ion-icon is not an error
-// don't print error on console log
+// the enternal element ion-icon is not an error...don't print error on console log
 
 Vue.use(VueScrollactive);
 Vue.use(VueWindowSizePlugin);

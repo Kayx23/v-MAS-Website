@@ -21,6 +21,11 @@ export default {
 /* google font */
 @import "https://fonts.googleapis.com/css2?family=Inter&display=swap";
 
+/* recaptcha */
+/* .grecaptcha-badge {
+  visibility: hidden;
+}
+ */
 ::selection {
   background: rgb(255, 192, 72);
 }

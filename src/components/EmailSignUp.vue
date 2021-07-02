@@ -205,7 +205,7 @@ export default {
 }
 
 #mc_embed_signup div.response {
-  margin: 1em 0;
+  margin: 0.5em 0.5rem;
   padding: 1em 0.5em 0.5em 0;
   float: left;
   top: -1.5em;

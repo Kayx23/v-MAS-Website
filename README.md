@@ -6,6 +6,14 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/650efd8a-9fab-4a0a-bb4c-f971def5b10b/deploy-status)](https://app.netlify.com/sites/devmactuary/deploys)
   dev : https://dev.mactuary.ca
 
+[Sanity studio config](https://github.com/Kayx23/sanity-MAS-Website)
+
+### 🍃 v1.1.0 new features
+* Subscription signup & email double opt-in
+* Unverified email automatic removal (TTL=1hr)
+* Automatically insert custom unsubscribe URL for each user
+* Two email endpoints for email distribution (prod & internal test)
+
 ## Functionless Backend
 
 ### User Signup

@@ -14,10 +14,17 @@
 * Automatically insert custom unsubscribe URL for each user
 * Two email endpoints for email distribution (prod & internal test)
 
-## Functionless Backend
+## Mailing List Backend: AWS FaaS
 
-### User Signup
+Core Services Required: API Gateway, Lambda, DynamoDB, SES (prod), S3
+* Lambda Runtime: `Python 3.8`
+
+Other Services Used: IAM, SNS, CloudWatch
+
+### Architecture
+
+#### User Signup
 ![subscription](https://user-images.githubusercontent.com/39619599/124336766-4c1fc200-db6d-11eb-81ae-ac5ef504952d.png)
 
-### Email Distribution
+#### Email Distribution
 ![sned email](https://user-images.githubusercontent.com/39619599/124336767-4f1ab280-db6d-11eb-93cf-9e77de6710c4.png)

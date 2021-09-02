@@ -10,6 +10,11 @@ Vue.use(Router)
 
 export default new Router({
     routes: [
+        // redirect invalid routes to home 
+        /*         {
+                    path: '/*',
+                    redirect: { name: 'home' }
+                }, */
         {
             path: '/',
             component: Home,

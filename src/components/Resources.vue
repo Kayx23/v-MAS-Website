@@ -19,12 +19,10 @@
           <h4>Study Sessions</h4>
           <p>
             We are here to help you with your Exam P, FM and IFM studying, as
-            well as the relevant math and stats courses! See you at 12:30pm -
-            1:20pm EST every Thursday on Zoom.
+            well as the relevant math and stats courses! See you at 11:30am -
+            12:30pm EST every Friday on Zoom.
           </p>
-          <a onclick="alert('Stay tuned - Zoom link to be updated!')"
-            >Zoom Link</a
-          >
+          <a href="https://mcmaster.zoom.us/j/98028635729?pwd=L2ZtQkFycE1NZ3Boa29YeUFQS2xzZz09">Zoom Link</a>
         </div>
         <div class="card">
           <div class="card-icon"></div>
@@ -46,6 +44,12 @@
             their co-op and full-time interviews.
           </p>
           <a href="mailto:actuary@mcmaster.ca">Email Us</a>
+        </div>
+        <div class="card">
+            <div class="card-icon"></div>
+                <h4>New ASA Curriculum Changes</h4>
+                <p>Questions about the new ASA pathway changes? Don't know what changes have been made and when they will be effective? Please view the documents below for full explanations!</p>
+                <a href="./pdfs/mas_pathway_changes.pdf">View PDF</a>
         </div>
       </div>
     </section>

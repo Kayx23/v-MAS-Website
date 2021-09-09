@@ -48,7 +48,7 @@
         <div class="card">
             <div class="card-icon"></div>
                 <h4>New ASA Curriculum Changes</h4>
-                <p>Description? Not sure what you wanna put here.</p>
+                <p>Questions about the new ASA pathway changes? Don't know what changes have been made and when they will be effective? Please view the documents below for full explanations!</p>
                 <a href="./pdfs/mas_pathway_changes.pdf">View PDF</a>
         </div>
       </div>

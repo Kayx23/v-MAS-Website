@@ -6,31 +6,24 @@
       <div class="card-container">
         <div class="card">
           <div class="card-icon"></div>
-          <h4>Exam Material Rental</h4>
-          <p>
-            Due to COVID-19, we are currently not renting out any physicial
-            manuals or calculators. We apologize for the inconvenience and will
-            resume this service as soon as campus reopens.
-          </p>
-          <a href="#nothing">Coming Soon</a>
-        </div>
-        <div class="card">
-          <div class="card-icon"></div>
           <h4>Study Sessions</h4>
           <p>
             We are here to help you with your Exam P, FM and IFM studying, as
             well as the relevant math and stats courses! See you at 11:30am -
             12:30pm EST every Friday on Zoom.
           </p>
-          <a href="https://mcmaster.zoom.us/j/98028635729?pwd=L2ZtQkFycE1NZ3Boa29YeUFQS2xzZz09">Zoom Link</a>
+          <a
+            href="https://mcmaster.zoom.us/j/98028635729?pwd=L2ZtQkFycE1NZ3Boa29YeUFQS2xzZz09"
+            >Zoom Link</a
+          >
         </div>
         <div class="card">
           <div class="card-icon"></div>
           <h4>Clothing Program</h4>
           <p>
             Want to order shirts or hoodies with the "Mactuaries" or MAS logo
-            print to channel some actuarial spirits? Stay tuned, 2020-2021
-            designs are coming soon!
+            print to channel some actuarial spirits? Stay tuned, 2021-2022
+            designs are coming in the Winter Term!
           </p>
           <!-- <a href="./clothing.html">Read More</a> -->
           <router-link to="/clothing">Read More</router-link>
@@ -46,10 +39,14 @@
           <a href="mailto:actuary@mcmaster.ca">Email Us</a>
         </div>
         <div class="card">
-            <div class="card-icon"></div>
-                <h4>New ASA Curriculum Changes</h4>
-                <p>Questions about the new ASA pathway changes? Don't know what changes have been made and when they will be effective? Please view the documents below for full explanations!</p>
-                <a href="./pdfs/mas_pathway_changes.pdf">View PDF</a>
+          <div class="card-icon"></div>
+          <h4>New ASA Curriculum Changes</h4>
+          <p>
+            Questions about the new ASA pathway changes? Don't know what changes
+            have been made and when they will be effective? Please view the
+            documents below for full explanations!
+          </p>
+          <a href="./pdfs/mas_pathway_changes.pdf">View PDF</a>
         </div>
       </div>
     </section>

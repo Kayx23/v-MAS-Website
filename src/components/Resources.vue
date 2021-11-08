@@ -17,7 +17,7 @@
             >Zoom Link</a
           >
         </div>
-        <div class="card">
+        <!-- <div class="card">
           <div class="card-icon"></div>
           <h4>Clothing Program</h4>
           <p>
@@ -25,9 +25,8 @@
             print to channel some actuarial spirits? Stay tuned, 2021-2022
             designs are coming in the Winter Term!
           </p>
-          <!-- <a href="./clothing.html">Read More</a> -->
           <router-link to="/clothing">Read More</router-link>
-        </div>
+        </div> -->
         <div class="card">
           <div class="card-icon"></div>
           <h4>Mock Interviews</h4>
@@ -47,6 +46,14 @@
             documents below for full explanations!
           </p>
           <a href="./pdfs/mas_pathway_changes.pdf">View PDF</a>
+        </div>
+        <div class="card">
+          <div class="card-icon"></div>
+          <h4>ASNA 2022 Info</h4>
+          <p>
+            Missed our ASNA presentation? Find all the fees, deadlines, event schedules, and all other important information in tis PDF.
+          </p>
+          <a href="./pdfs/ASNA_Info_2022.pdf">View PDF</a>
         </div>
       </div>
     </section>

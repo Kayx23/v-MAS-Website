@@ -37,6 +37,7 @@
           </p>
           <a href="mailto:actuary@mcmaster.ca">Email Us</a>
         </div>
+
         <div class="card">
           <div class="card-icon"></div>
           <h4>New ASA Curriculum Changes</h4>
@@ -47,6 +48,7 @@
           </p>
           <a href="./pdfs/mas_pathway_changes.pdf">View PDF</a>
         </div>
+
         <div class="card">
           <div class="card-icon"></div>
           <h4>ASNA 2022 Info</h4>
@@ -55,6 +57,16 @@
           </p>
           <a href="./pdfs/ASNA_Info_2022.pdf">View PDF</a>
         </div>
+
+        <div class="card">
+          <div class="card-icon"></div>
+          <h4>Coaching Actuaries and SOA Event</h4>
+          <p>
+            Here is our Coaching Actuaries and SOA powerpoint if you weren’t able to make it or if you wanted a recap. Feel free to email us with any questions!
+          </p>
+          <a href="./pdfs/SOA_CA_Event.pdf">View PDF</a>
+        </div>
+
       </div>
     </section>
   </div>

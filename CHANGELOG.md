@@ -4,6 +4,7 @@
 ## v0.5.0
 
 * Add the MAS website preloader/animation
+* Integrate with Google Calendar to show MAS upcoming events
 * Integrate with CMS [Sanity Studio](https://github.com/mactuary/MAS-Website-Sanity) to update Meet the Team page information
 
 ## v1.1.0
@@ -23,3 +24,7 @@ Other Services: IAM, SNS, CloudWatch
 
 #### Email Distribution
 ![sned email](https://user-images.githubusercontent.com/39619599/124336767-4f1ab280-db6d-11eb-93cf-9e77de6710c4.png)
+
+## v1.1.1
+
+* Document [how to update the website](/.doc/doc.md) for school year 2021-2022
